@@ -1,16 +1,16 @@
 package school.mjc.stage0.loops.task5;
 
 public class Triangle {
-    public void printTriangle(int cathetusLength) {
+    public static void printTriangle(int cathetusLength) {
         for (int i = 0; i < cathetusLength; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print("8");
+            for (int j = 0; j <= cathetusLength; j++) {
+                if (j <= i){
+                    System.out.print("8");
+                    continue;
+                }
+                System.out.print(" ");
             }
-            if (i == cathetusLength - 1) {
-                continue;
-            } else {
-                System.out.println();
-            }
+            System.out.println();
         }
     }
 }
